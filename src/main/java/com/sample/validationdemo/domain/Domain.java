@@ -17,7 +17,7 @@ public class Domain {
     @Min(value = 10)
     private Integer min;
     @NotNull
-    @Max(value = 100)
+    @Max(value = 100, message = "{max}, {value}")
     private Integer max;
     @NotNull
     @Future
